@@ -196,16 +196,3 @@ GitHub: https://github.com/Noufalthecoder
 This project is licensed under the MIT License.
 
 GitGrade is designed to reflect how real engineers evaluate repositories — combining measurable signals with clear, actionable feedback.
-
-yaml
-Copy code
-
----
-
-### ✅ What to do now
-1. Paste this into `README.md`
-2. Commit & push:
-```bash
-git add README.md
-git commit -m "Add judge-ready README"
-git push origin main
