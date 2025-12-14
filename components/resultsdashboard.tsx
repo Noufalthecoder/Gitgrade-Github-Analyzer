@@ -19,27 +19,27 @@ export function ResultsDashboard({ result, repoUrl, onReset }: ResultsDashboardP
   const repoName = repoUrl.split("/").slice(-2).join("/")
 
   return (
-    <section className="min-h-[90vh] px-4 py-12 sm:py-16">
+    <section className="min-h-screen px-4 py-12 sm:py-20 bg-gradient-to-b from-accent/5 via-background to-background">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8"
+          className="mb-12 sm:mb-16"
         >
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={onReset}
+            className="mb-6 -ml-2 text-muted-foreground hover:text-accent hover:bg-accent/5 transition-all duration-200"
+          >
+            <ArrowLeft className="h-4 w-4 mr-2" />
+            Analyze Another Repository
+          </Button>
           <div>
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={onReset}
-              className="mb-4 -ml-2 text-muted-foreground hover:text-foreground"
-            >
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              Analyze another
-            </Button>
-            <h1 className="text-2xl sm:text-3xl font-bold text-foreground">Analysis Results</h1>
-            <p className="text-muted-foreground font-mono text-sm mt-1">{repoName}</p>
+            <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-3 text-balance">Analysis Results</h1>
+            <p className="text-muted-foreground font-mono text-sm bg-card px-4 py-2 rounded-lg inline-block border border-border/50">{repoName}</p>
           </div>
         </motion.div>
 
@@ -78,5 +78,6 @@ export function ResultsDashboard({ result, repoUrl, onReset }: ResultsDashboardP
         </motion.div>
       </div>
     </section>
+  )
   )
 }
