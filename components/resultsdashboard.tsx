@@ -79,5 +79,4 @@ export function ResultsDashboard({ result, repoUrl, onReset }: ResultsDashboardP
       </div>
     </section>
   )
-  )
 }
