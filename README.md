@@ -3,6 +3,11 @@
 > Convert real GitHub repositories into engineering scores, professional feedback, and actionable improvement roadmaps — inspired by how recruiters and mentors review code.
 
 ---
+## 🎥 Project Demo (Screen Recording)
+
+▶️ Watch the full working demo here deployed in vercel   
+https://drive.google.com/file/d/1SeFHSsguwF7mL73O8sPRCwJ4UhEbpvCR/view?usp=drivesdk
+
 
 ## 🧠 Why GitGrade?
 
